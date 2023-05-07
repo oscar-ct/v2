@@ -1,5 +1,4 @@
 import React from 'react';
-import Headshot from "../bw-headshot.jpeg";
 import Navbar from "./Navbar";
 import About from "./About";
 
