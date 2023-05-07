@@ -3,12 +3,15 @@ import Knowledge from "../components/Knowledge";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Intro from "../components/Intro";
+// import Intro from "../components/Intro";
+import Navbar from "../components/Navbar";
+import About from "../components/About";
 
 const Home = () => {
     return (
         <>
-            <Intro/>
+            <Navbar/>
+            <About/>
             <Knowledge/>
             <Skills/>
             <Projects/>
