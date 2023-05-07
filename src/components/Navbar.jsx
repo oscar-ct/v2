@@ -1,8 +1,10 @@
 import React from 'react';
+import LinkedIn from "../icons/linkedin.svg";
+import Github from "../icons/github.svg";
 
 const Navbar = () => {
     return (
-        <div className={"lg:mt-[8rem] w-full"}>
+        <div className={"lg:pt-[8rem] w-full"}>
             <div className="navbar bg-base-100/0 text-white lg:px-[4rem]">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -33,8 +35,8 @@ const Navbar = () => {
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                             </a>
                             <ul className="p-2">
-                                <li><a>LinkedIn</a></li>
-                                <li><a>Github</a></li>
+                                <li><a><img src={LinkedIn} className={"w-5"}/>LinkedIn</a></li>
+                                <li><a><img src={Github} className={"w-5"}/>Github</a></li>
                             </ul>
                         </li>
                         <li><a>What I know</a></li>
