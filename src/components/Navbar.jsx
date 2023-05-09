@@ -28,7 +28,6 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>About Me</a></li>
                         <li tabIndex={0}>
                             <a>
                                 Social
@@ -40,8 +39,8 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li><a>What I know</a></li>
-                        <li><a>Skills</a></li>
                         <li><a>Projects</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
