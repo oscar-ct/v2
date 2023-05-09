@@ -5,12 +5,36 @@ const dream4 = require('../images/dream-cars/dream_4.jpg');
 const dream5 = require('../images/dream-cars/dream_5.jpg');
 const dream6 = require('../images/dream-cars/dream_6.jpg');
 
+
+const support1 = require('../images/support-desk/support_1.jpg');
+const support2 = require('../images/support-desk/support_2.jpg');
+const support3 = require('../images/support-desk/support_3.jpg');
+const support4 = require('../images/support-desk/support_4.jpg');
+const support5 = require('../images/support-desk/support_5.jpg');
+const support6 = require('../images/support-desk/support_6.jpg');
+
+
+const films1 = require('../images/react-films/films_1.jpg');
+const films2 = require('../images/react-films/films_2.jpg');
+const films3 = require('../images/react-films/films_3.jpg');
+const films4 = require('../images/react-films/films_4.jpg');
+const films5 = require('../images/react-films/films_5.jpg');
+const films6 = require('../images/react-films/films_6.jpg');
+
+
+const poke1 = require('../images/pokemon/poke_1.jpg');
+const poke2 = require('../images/pokemon/poke_2.jpg');
+const poke3 = require('../images/pokemon/poke_3.jpg');
+const poke4 = require('../images/pokemon/poke_4.jpg');
+const poke5 = require('../images/pokemon/poke_5.jpg');
+const poke6 = require('../images/pokemon/poke_6.jpg');
+
+
 export const projects = [
     {   id: 1,
         name: "Support Desk",
         development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS"],
-        images: null,
-        support: ["OMDb API"],
+        images: [support1, support2, support3, support4, support5, support6],
         description: "Need IT support for your favorite electronics? Support desk is here to help. Built on the MERN stack (MongoDB, Express, React, NodeJS), users can login/signup, submit support tickets with full CRUD functionality, and view ticket notes made by the user and Support Specialist. Supported by Redux Toolkit for state handling and Mongoose for object modeling. Styling is finished with Bootstrap 5."
 
     },
@@ -24,7 +48,7 @@ export const projects = [
     },
     {   id: 3,
         name: 'React-Films',
-        images: null,
+        images: [films1, films2, films3, films4, films5, films6],
         support: ["OMDb API"],
         development: ["React", "TailwindCSS", "HTML", "JavaScript", "CSS"],
         description: 'Whether you love a movie and want to remember it, or you are looking for a new film to watch, React Films can help. Utilizing CRA, Context API, and OMDb API, users can search from thousands of movie titles and save/share their favorites films. Styling is modern and sleek, built with TailwindCSS/daisyui.'
@@ -32,7 +56,7 @@ export const projects = [
     },
     {   id: 4,
         name: 'Pokémon-J',
-        images: null,
+        images: [poke1, poke2, poke3, poke4, poke5, poke6],
         support: ["OMDb API"],
         development: ["jQuery", "HTML", "JavaScript", "CSS"],
         description: 'Pokémon-J is a front-end web application, programmed using mostly jQuery. Utilizing AJAX and PokéAPI, users are met with a fun interactive interface providing lively pokémon sprites, along with pokémon stats.'
