@@ -30,6 +30,40 @@ const poke5 = require('../images/pokemon/poke_5.jpg');
 const poke6 = require('../images/pokemon/poke_6.jpg');
 
 
+const weather1 = require('../images/simply-weather/weather_1.jpg');
+const weather2 = require('../images/simply-weather/weather_2.jpg');
+const weather3 = require('../images/simply-weather/weather_3.jpg');
+const weather4 = require('../images/simply-weather/weather_4.jpg');
+const weather5 = require('../images/simply-weather/weather_5.jpg');
+const weather6 = require('../images/simply-weather/weather_6.jpg');
+
+
+const haven1 = require('../images/gamerhaven/haven_1.jpg');
+const haven2 = require('../images/gamerhaven/haven_2.jpg');
+const haven3 = require('../images/gamerhaven/haven_3.jpg');
+const haven4 = require('../images/gamerhaven/haven_4.jpg');
+const haven5 = require('../images/gamerhaven/haven_5.jpg');
+const haven6 = require('../images/gamerhaven/haven_6.jpg');
+const haven7 = require('../images/gamerhaven/haven_7.jpg');
+const haven8 = require('../images/gamerhaven/haven_8.jpg');
+const haven9 = require('../images/gamerhaven/haven_9.jpg');
+const haven10 = require('../images/gamerhaven/haven_10.jpg');
+const haven11 = require('../images/gamerhaven/haven_11.jpg');
+const haven12 = require('../images/gamerhaven/haven_12.jpg');
+const haven13 = require('../images/gamerhaven/haven_13.jpg');
+const haven14 = require('../images/gamerhaven/haven_14.jpg');
+const haven15 = require('../images/gamerhaven/haven_15.jpg');
+
+const lister1 = require('../images/game-lister/lister_1.jpg');
+const lister2 = require('../images/game-lister/lister_2.jpg');
+const lister3 = require('../images/game-lister/lister_3.jpg');
+const lister4 = require('../images/game-lister/lister_4.jpg');
+const lister5 = require('../images/game-lister/lister_5.jpg');
+const lister6 = require('../images/game-lister/lister_6.jpg');
+const lister7 = require('../images/game-lister/lister_7.jpg');
+const lister8 = require('../images/game-lister/lister_8.jpg');
+
+
 export const projects = [
     {   id: 1,
         name: "Support Desk",
@@ -73,7 +107,7 @@ export const projects = [
     {
         id: 6,
         name: 'Simply Weather',
-        images: null,
+        images: [weather1, weather2, weather3, weather4, weather5, weather6],
         support: ["OMDb API"],
         development: ["HTML", "JavaScript", "CSS"],
         description: 'Simply Weather is a front-end web application programmed using vanilla JavaScript. Utilizing OpenWeather API and Fetch API, users can view a 7-day forecast of the location of their choosing.  Simply Weather is designed to be intuitive and simple, but still providing users with a plethora of data.'
@@ -81,7 +115,7 @@ export const projects = [
     {
         id: 7,
         name: 'GamerHaven',
-        images: null,
+        images: [haven1, haven2, haven3, haven4, haven5, haven6, haven7, haven8, haven9, haven10, haven11, haven12, haven13, haven14, haven15],
         support: ["OMDb API"],
         development: ["Java", "Spring", "Thymeleaf", "MySQL", "HTML", "JavaScript", "CSS"],
         description: 'GamerHaven is a full-stack social media app created for gamers across the world!  Built by a team of 5, users can search over 500,000 game titles, follow other users, create posts, leave comments, and much more.  GamerHaven is built on Spring, structured using MVC, programmed with Java and SQL, utilizes Spring JPA, and connected to MySQL.'
@@ -89,7 +123,7 @@ export const projects = [
     {
         id: 8,
         name: 'GameLister',
-        images: null,
+        images: [lister1, lister2, lister3, lister4, lister5, lister6, lister7, lister8],
         support: ["OMDb API"],
         development: ["Java", "MySQL", "HTML", "JavaScript", "CSS"],
         description: 'GameLister is a Craigslist like full-stack web application where users can create accounts, search listings, and post ads with full CRUD functionality.  Built by a team of 3, GameLister is structured using MVC, programmed with Java and SQL, utilizes Java Servlets and JDBC API, and connected to MySQL. Database security is achieved by utilizing prepared statements.'
