@@ -1,71 +1,66 @@
 import React from 'react';
-import JavaScript from "../icons/javascript.svg";
-import HTML from "../icons/html5.svg";
-import CSS from "../icons/css3.svg";
-import ReactIcon from "../icons/react.svg";
-import Redux from "../icons/redux.svg";
-import JQuery from "../icons/jquery.svg";
-import Tailwind from "../icons/tailwindcss.svg";
-import Bootstrap from "../icons/bootstrap.svg";
-import Java from "../icons/java.svg";
-import Spring from "../icons/spring.svg";
-import Node from "../icons/nodedotjs.svg";
-import Mongoose from "../icons/mongoose.svg";
-import Firebase from "../icons/firebase.svg";
-import Express from "../icons/express.svg";
-import MySQL from "../icons/mysql.svg";
-import MongoDB from "../icons/mongodb.svg";
-import Thymeleaf from "../icons/thymeleaf.svg";
+import {ReactComponent as JavaScript} from "../icons/javascript.svg";
+import {ReactComponent as HTML} from "../icons/html5.svg";
+import {ReactComponent as CSS} from "../icons/css3.svg";
+import {ReactComponent as ReactIcon} from "../icons/react.svg";
+import {ReactComponent as Redux} from "../icons/redux.svg";
+import {ReactComponent as JQuery} from "../icons/jquery.svg";
+import {ReactComponent as Tailwind} from "../icons/tailwindcss.svg";
+import {ReactComponent as Bootstrap} from "../icons/bootstrap.svg";
+import {ReactComponent as Java} from "../icons/java.svg";
+import {ReactComponent as Spring} from "../icons/spring.svg";
+import {ReactComponent as Node} from "../icons/nodedotjs.svg";
+import {ReactComponent as Mongoose} from "../icons/mongoose.svg";
+import {ReactComponent as Firebase} from "../icons/firebase.svg";
+import {ReactComponent as Express} from "../icons/express.svg";
+import {ReactComponent as MySQL} from "../icons/mysql.svg";
+import {ReactComponent as MongoDB} from "../icons/mongodb.svg";
+import {ReactComponent as Thymeleaf} from "../icons/thymeleaf.svg";
 
 
-const Icon = ({name}) => {
+const Icon = ({name, fill}) => {
 
     const svg = (string) => {
         switch (string.toLowerCase()) {
             case 'react':
-                return ReactIcon;
+                return <ReactIcon fill={fill} className={"w-7 mx-2"}/>;
             case 'redux':
-                return Redux;
+                return <Redux fill={fill} className={"w-7 mx-2"}/>;
             case 'jquery':
-                return JQuery;
+                return <JQuery fill={fill} className={"w-7 mx-2"}/>;
             case 'javascript':
-                return JavaScript;
+                return <JavaScript fill={fill} className={"w-7 mx-2"}/>;
             case 'java':
-                return Java;
+                return <Java fill={fill} className={"w-7 mx-2"}/>;
             case 'html':
-                return HTML;
+                return <HTML fill={fill} className={"w-7 mx-2"}/>;
             case 'css':
-                return CSS;
+                return <CSS fill={fill} className={"w-7 mx-2"}/>;
             case 'tailwindcss':
-                return Tailwind;
+                return <Tailwind fill={fill} className={"w-7 mx-2"}/>;
             case 'bootstrap':
-                return Bootstrap;
+                return <Bootstrap fill={fill} className={"w-7 mx-2"}/>;
             case 'spring':
-                return Spring;
+                return <Spring fill={fill} className={"w-7 mx-2"}/>;
             case 'node.js':
-                return Node;
+                return <Node fill={fill} className={"w-7 mx-2"}/>;
             case 'mongoose':
-                return Mongoose;
+                return <Mongoose fill={fill} className={"w-7 mx-2"}/>;
             case 'firebase':
-                return Firebase;
+                return <Firebase fill={fill} className={"w-7 mx-2"}/>;
             case 'express':
-                return Express;
+                return <Express fill={fill} className={"w-7 mx-2"}/>;
             case 'mysql':
-                return MySQL;
+                return <MySQL fill={fill} className={"w-7 mx-2"}/>;
             case 'mongodb':
-                return MongoDB;
+                return <MongoDB fill={fill} className={"w-7 mx-2"}/>;
             case 'thymeleaf':
-                return Thymeleaf;
+                return <Thymeleaf fill={fill} className={"w-7 mx-2"}/>;
             default:
                 console.log("Hi :)");
         }
     }
-
-    return (
-        <icon className={"m-3"}>
-            <img className={"w-7"} src={svg(name)} alt={"tech"}/>
-        </icon>
-    );
+    return svg(name)
 };
 
 export default Icon;
