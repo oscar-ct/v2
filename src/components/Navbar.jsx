@@ -1,53 +1,149 @@
-import React from 'react';
-import LinkedIn from "../icons/linkedin.svg";
-import Github from "../icons/github.svg";
+import {useEffect, useState} from "react";
+import {useScroll} from "../hooks/useScroll";
+
 
 const Navbar = () => {
+
+    const { scrollY, scrollDirection } = useScroll();
+    const [openNav, setOpenNav] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener(
+            "resize",
+            () => window.innerWidth >= 960 && setOpenNav(false)
+        );
+        if (openNav) {
+            window.addEventListener(
+                "scroll",
+                () => setOpenNav(false)
+            );
+        }
+
+    }, [openNav]);
+
+
+    const styles = {
+        active: {
+            visibility: "visible",
+            transition: "all 0.5s"
+        },
+        hidden: {
+            visibility: "hidden",
+            transition: "all 0.5s",
+            transform: "translateY(-100%)"
+        },
+        hidden2: {
+            visibility: "hidden",
+            // display: "none",
+            transition: "all 0.5s",
+            transform: "translateX(-100%)"
+        }
+    }
+
+
     return (
-        <div className={"lg:pt-[8rem] w-full"}>
-            <div className="navbar bg-base-100/0 text-white lg:px-[4rem]">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>About</a></li>
-                            <li tabIndex={0}>
-                                <a className="justify-between">
-                                    Parent
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+        <>
+            <nav className={`sticky inset-0 z-10 block h-max w-full max-w-full rounded-none  lg:bg-transparent py-5 text-white shadow-md backdrop-blur-sm  lg:py-4 lg:mb-8`}
+                 style={scrollY === 0 || scrollDirection === "up" || (scrollDirection === "down" && scrollY < 25) ? styles.active: styles.hidden}
+            >
+                <div className="px-5 flex justify-end items-center text-white">
+                    <div>
+                        <ul className="ml-auto mr-8 hidden items-center gap-6 lg:flex">
+                            <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
+                                <a className="flex items-center" href="#">
+                                    About Me
                                 </a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+                            </li>
+                            <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
+                                <a className="flex items-center" href="#">
+                                    What I Know
+                                </a>
+                            </li>
+                            <li className="block p-1  font-normal antialiased hover:subpixel-antialiased">
+                                <a className="flex items-center" href="#">
+                                    My Projects
+                                </a>
                             </li>
                         </ul>
                     </div>
+                    <div className={"flex justify-end"}>
+                        <button
+                            className="antialiased hover:subpixel-antialiased middle none center hidden rounded-lg bg-gradient-to-tr from-purple-700 to-purple-500 py-2 px-4 font-bold text-sm uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                            type="button"
+                        >
+                            <span>MESSAGE ME</span>
+                        </button>
+                    </div>
+
+
+
+                    <button className="middle none relative mr-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center uppercase transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden" onClick={() => setOpenNav(!openNav)}>
+                            {openNav ? (
+                                  <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      className="h-7 w-7"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      strokeWidth={2}
+                                  >
+                                      <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          d="M6 18L18 6M6 6l12 12"
+                                      />
+                                  </svg>
+                            ) : (
+                                  <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      className="h-7 w-7"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor">
+                                      <path
+                                          strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M4 6h16M4 12h8m-8 6h16"
+                                      />
+                                  </svg>
+                            )}
+
+                    </button>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li tabIndex={0}>
-                            <a>
-                                Social
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                            </a>
-                            <ul className="p-2">
-                                <li><a><img src={LinkedIn} className={"w-5"}/>LinkedIn</a></li>
-                                <li><a><img src={Github} className={"w-5"}/>Github</a></li>
-                            </ul>
-                        </li>
-                        <li><a>What I know</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
+
+                <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/80 backdrop-blur-lg lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
+                    <div className={"flex flex-col justify-center h-full w-full"}>
+                        <ul className="flex flex-col gap-4 pb-12 font-bold text-2xl">
+                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                                <a className="flex justify-start px-8" href="#">
+                                    About Me
+                                </a>
+                            </li>
+                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                                <a className="flex justify-start px-8" href="#">
+                                    What I Know
+                                </a>
+                            </li>
+                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                                <a className="flex justify-start px-8" href="#">
+                                    My Projects
+                                </a>
+                            </li>
+                            <div className={"px-8 pt-5 flex justify-center"}>
+                                <button
+                                    className="antialiased hover:subpixel-antialiased text-xl mb-2 block w-60 md:w-72 rounded-lg bg-gradient-to-tr from-purple-600 to-purple-400 py-2 px-4 font-bold uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                    type="button"
+                                >
+                                    <span>MESSAGE ME</span>
+                                </button>
+                            </div>
+
+                        </ul>
+                    </div>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Message Me</a>
-                </div>
-            </div>
-        </div>
+            </nav>
+            </>
     );
 };
 
