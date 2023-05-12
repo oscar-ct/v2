@@ -6,6 +6,7 @@ const Navbar = () => {
 
     const { scrollY, scrollDirection } = useScroll();
     const [openNav, setOpenNav] = useState(false);
+    const [scroll, setScroll] = useState(0);
 
     useEffect(() => {
         window.addEventListener(
@@ -41,6 +42,7 @@ const Navbar = () => {
     }
 
 
+
     return (
         <>
             <nav className={`sticky inset-0 z-10 block h-max w-full max-w-full rounded-none  lg:bg-transparent py-5 text-white shadow-md backdrop-blur-sm  lg:py-4 lg:mb-8`}
@@ -50,19 +52,19 @@ const Navbar = () => {
                     <div>
                         <ul className="ml-auto mr-8 hidden items-center gap-6 lg:flex">
                             <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
-                                <a className="flex items-center" href="#">
+                                <button onClick={() => {window.scrollTo({ top: 500, behavior: 'smooth' })}} className="a flex items-center">
                                     About Me
-                                </a>
+                                </button>
                             </li>
                             <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
-                                <a className="flex items-center" href="#">
+                                <button onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className="a flex items-center">
                                     What I Know
-                                </a>
+                                </button>
                             </li>
                             <li className="block p-1  font-normal antialiased hover:subpixel-antialiased">
-                                <a className="flex items-center" href="#">
+                                <button onClick={() => {window.scrollTo({ top: 2000, behavior: 'smooth' })}} className="a flex items-center">
                                     My Projects
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -112,23 +114,23 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/80 backdrop-blur-lg lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
+                <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/80 rounded-r-xl lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
                     <div className={"flex flex-col justify-center h-full w-full"}>
                         <ul className="flex flex-col gap-4 pb-12 font-bold text-2xl">
-                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
-                                <a className="flex justify-start px-8" href="#">
+                            <li onClick={() => {window.scrollTo({ top: 660, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                                <button className="a flex justify-start px-8">
                                     About Me
-                                </a>
+                                </button>
                             </li>
-                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
-                                <a className="flex justify-start px-8" href="#">
+                            <li onClick={() => {window.scrollTo({ top: 1425, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                                <button className="a flex justify-start px-8">
                                     What I Know
-                                </a>
+                                </button>
                             </li>
-                            <li className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
-                                <a className="flex justify-start px-8" href="#">
+                            <li onClick={() => {window.scrollTo({ top: 2850, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                                <button className="a flex justify-start px-8">
                                     My Projects
-                                </a>
+                                </button>
                             </li>
                             <div className={"px-8 pt-5 flex justify-center"}>
                                 <button
