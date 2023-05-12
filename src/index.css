@@ -40,8 +40,11 @@ a::before {
     transform-origin: top left;
     transition: transform 0.2s ease;
 }
-a:hover::before {
+li:hover a::before {
     transform: scaleX(1);
+}
+li {
+    cursor: pointer;
 }
 
 button:hover svg {
