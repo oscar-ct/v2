@@ -1,5 +1,9 @@
 import {useEffect, useState} from "react";
 import {useScroll} from "../hooks/useScroll";
+import {ReactComponent as Github} from "../icons/github.svg";
+import {ReactComponent as LinkedIn} from "../icons/linkedin.svg";
+import {ReactComponent as Gmail} from "../icons/gmail.svg";
+import {motion} from "framer-motion";
 
 
 const Navbar = () => {
@@ -47,8 +51,31 @@ const Navbar = () => {
             <nav className={`sticky inset-0 z-10 block h-max w-full max-w-full rounded-none  lg:bg-transparent py-5 text-white shadow-md backdrop-blur-sm  lg:py-4 lg:mb-8`}
                  style={scrollY === 0 || scrollDirection === "up" || (scrollDirection === "down" && scrollY < 25) ? styles.active: styles.hidden}
             >
-                <div className="px-5 flex justify-end items-center text-white">
-                    <div>
+                <div className="px-5 flex justify-between items-center text-white">
+                    <div className={"hidden lg:flex lg:items-center"}>
+                        <div className={"h-[1px] w-48 border-b-[1px] border-white"}/>
+                        <motion.a
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 1.0 }}
+                            href={"https://github.com/oscar-ct"}><Github className={"ml-4 w-6"} fill={"white"}/></motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 1.0 }}
+                            href={"https://www.linkedin.com/in/oscar-ct/"}><LinkedIn className={"ml-4 w-6"} fill={"white"}/></motion.a>
+                        <div className="dropdown dropdown-bottom">
+                            <motion.div
+                                style={{cursor: "pointer"}}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 1.0 }}
+                                tabIndex={0}>
+                                    <Gmail className={"ml-4 w-6"} fill={"white"}/>
+                            </motion.div>
+                            <ul tabIndex={0} className="mt-1 dropdown-content menu p-2 shadow bg-transparent antialiased rounded-lg">
+                                <li className={"text-white"}>oscar.a.castro818@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={"flex"}>
                         <ul className="ml-auto mr-8 hidden items-center gap-6 lg:flex">
                             <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
                                 <button onClick={() => {window.scrollTo({ top: 500, behavior: 'smooth' })}} className="a flex items-center">
@@ -61,20 +88,21 @@ const Navbar = () => {
                                 </button>
                             </li>
                             <li className="block p-1  font-normal antialiased hover:subpixel-antialiased">
-                                <button onClick={() => {window.scrollTo({ top: 2000, behavior: 'smooth' })}} className="a flex items-center">
+                                <button onClick={() => {window.scrollTo({ top: 2050, behavior: 'smooth' })}} className="a flex items-center">
                                     My Projects
                                 </button>
                             </li>
                         </ul>
+                        <div className={"flex justify-end"}>
+                            <button
+                                className="antialiased hover:subpixel-antialiased middle none center hidden rounded-lg bg-gradient-to-tr from-purple-700 to-purple-500 py-2 px-4 font-bold text-sm uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                                type="button"
+                            >
+                                <span>MESSAGE ME</span>
+                            </button>
+                        </div>
                     </div>
-                    <div className={"flex justify-end"}>
-                        <button
-                            className="antialiased hover:subpixel-antialiased middle none center hidden rounded-lg bg-gradient-to-tr from-purple-700 to-purple-500 py-2 px-4 font-bold text-sm uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-                            type="button"
-                        >
-                            <span>MESSAGE ME</span>
-                        </button>
-                    </div>
+
 
 
 
@@ -129,6 +157,11 @@ const Navbar = () => {
                             <li onClick={() => {window.scrollTo({ top: 2850, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     My Projects
+                                </button>
+                            </li>
+                            <li onClick={() => {window.scrollTo({ top: 9999, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                                <button className="a flex justify-start px-8">
+                                    Contact
                                 </button>
                             </li>
                             <div className={"px-8 pt-5 flex justify-center"}>
