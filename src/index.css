@@ -22,12 +22,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-a {
+.a {
     position: relative;
     text-decoration: none;
     cursor: pointer;
 }
-a::before {
+.a::before {
     content: "";
     position: absolute;
     display: block;
@@ -40,7 +40,7 @@ a::before {
     transform-origin: top left;
     transition: transform 0.2s ease;
 }
-li:hover a::before {
+li:hover .a::before {
     transform: scaleX(1);
 }
 li {
