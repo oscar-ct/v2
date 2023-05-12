@@ -6,7 +6,6 @@ const Navbar = () => {
 
     const { scrollY, scrollDirection } = useScroll();
     const [openNav, setOpenNav] = useState(false);
-    const [scroll, setScroll] = useState(0);
 
     useEffect(() => {
         window.addEventListener(
