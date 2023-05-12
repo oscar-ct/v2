@@ -41,7 +41,7 @@ const Knowledge = () => {
                                         <span className={"font-bold text-purple-400"}>TailwindCSS</span> and <span className={"font-bold text-purple-400"}>Bootstrap</span> are more tools that I have taken full advantage of when developing an application.  Learning both is tricky but the speed, simplicity, and customization is unparalleled.
                                     </p>
                                 </div>
-                                <div className={"flex flex-wrap p-3"}>
+                                <div className={"flex flex-wrap px-3 py-8 lg:p-3"}>
                                     <JavaScript fill={"white"} className={"w-12 m-2"}/>
                                     <HTML fill={"white"} className={"w-12 m-2"}/>
                                     <CSS fill={"white"} className={"w-12 m-2"}/>
@@ -71,7 +71,7 @@ const Knowledge = () => {
                                         <span className={"font-bold text-purple-400"}>Firebase</span> is another great tool under my belt. Everything from storage to user authentication, Google's Firebase brings it all together without any of the extra legwork.
                                     </p>
                                 </div>
-                                <div className={"flex flex-wrap p-3"}>
+                                <div className={"flex flex-wrap px-3 py-8 lg:p-3"}>
                                     <Java fill={"white"} className={"w-12 m-2"}/>
                                     <Spring fill={"white"} className={"w-12 m-2"}/>
                                     <Thymeleaf fill={"white"} className={"w-12 m-2"}/>
