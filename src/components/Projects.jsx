@@ -62,14 +62,14 @@ const Projects = () => {
                                             {project.name}
                                         </div>
 
-                                        <div className={"flex justify-start"}>
-                                            <span className={"text-3xl font-bold"}>&#123;</span>
+                                        <div className={"flex justify-start flex-wrap"}>
+                                            {/*<span className={"text-3xl font-bold"}>&#123;</span>*/}
                                             {
                                                 project.development.map(function (name, index) {
                                                     return <Icon key={index} fill={"rgb(192 132 252)"} name={name}/>
                                                 })
                                             }
-                                            <span className={"text-3xl font-bold"}>&#125;</span>
+                                            {/*<span className={"text-3xl font-bold"}>&#125;</span>*/}
                                         </div>
                                     </div>
                                     <p className={"leading-7 pb-5"}>
@@ -81,7 +81,7 @@ const Projects = () => {
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 1.0 }}
                                             className={"btn glass lg:btn-wide"}>
-                                            <Github fill={"black"} className={"w-8"}/>
+                                            <Github fill={"white"} className={"w-8"}/>
                                         </motion.button>
                                         {
                                             project.demo_link && (
@@ -90,7 +90,7 @@ const Projects = () => {
                                                     whileHover={{ scale: 1.1 }}
                                                     whileTap={{ scale: 0.9 }}
                                                     className={"btn glass lg:btn-wide"}>
-                                                    <Link fill={"black"} className={"w-7"}/>
+                                                    <Link fill={"white"} className={"w-7"}/>
                                                 </motion.button>
                                             )
                                         }

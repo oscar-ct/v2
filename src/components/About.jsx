@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Headshot from "../images/portfolio-headshot-cartoon.png";
 import {AnimatePresence, motion} from "framer-motion";
 
 const About = () => {
@@ -36,7 +35,7 @@ const About = () => {
                         </div>
                         <div className={"lg:w-6/12 flex justify-center items-center h-96"}>
                             <div className="tooltip tooltip-bottom" data-tip="Hi there! thanks for checking out my portfolio.">
-                                <img className={"w-96 mask mask-pentagon drop-shadow-xl"} src={Headshot} alt={"headshot"}/>
+                                <img className={"w-96 mask mask-pentagon drop-shadow-xl"} src={"https://firebasestorage.googleapis.com/v0/b/v2-portfolio-oscar.appspot.com/o/portfolio-headshot-cartoon.png?alt=media&token=b2f9cd27-77e1-4314-8a54-4fa678a82c01"} alt={"headshot"}/>
                             </div>
                         </div>
                     </div>
