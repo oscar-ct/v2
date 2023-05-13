@@ -36,6 +36,7 @@ export function useScroll() {
     });
 
     return {
+        scrollX,
         scrollY,
         scrollDirection,
     };
