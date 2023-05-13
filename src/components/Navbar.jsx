@@ -94,12 +94,15 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div className={"flex justify-end"}>
-                            <button
+                            {/*<label htmlFor="modal-message" className="btn">open modal</label>*/}
+
+                            <label
+                                htmlFor="modal-message"
+                                style={{cursor: "pointer"}}
                                 className="antialiased hover:subpixel-antialiased middle none center hidden rounded-lg bg-gradient-to-tr from-purple-700 to-purple-500 py-2 px-4 font-bold text-sm uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-                                type="button"
                             >
                                 <span>MESSAGE ME</span>
-                            </button>
+                            </label>
                         </div>
                     </div>
 
@@ -165,12 +168,12 @@ const Navbar = () => {
                                 </button>
                             </li>
                             <div className={"px-8 pt-5 flex justify-center"}>
-                                <button
-                                    className="antialiased hover:subpixel-antialiased text-xl mb-2 block w-60 md:w-72 rounded-lg bg-gradient-to-tr from-purple-600 to-purple-400 py-2 px-4 font-bold uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                    type="button"
+                                <label
+                                    htmlFor="modal-message"
+                                    className="antialiased text-center hover:subpixel-antialiased text-xl mb-2 block w-60 md:w-72 rounded-lg bg-gradient-to-tr from-purple-600 to-purple-400 py-2 px-4 font-bold uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                 >
                                     <span>MESSAGE ME</span>
-                                </button>
+                                </label>
                             </div>
 
                         </ul>
