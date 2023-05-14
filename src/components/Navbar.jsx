@@ -83,12 +83,12 @@ const Navbar = () => {
                                 </button>
                             </li>
                             <li className="block p-1 font-normal antialiased hover:subpixel-antialiased">
-                                <button onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className="a flex items-center">
+                                <button onClick={() => {window.scrollTo({ top: 1140, behavior: 'smooth' })}} className="a flex items-center">
                                     What I Know
                                 </button>
                             </li>
                             <li className="block p-1  font-normal antialiased hover:subpixel-antialiased">
-                                <button onClick={() => {window.scrollTo({ top: 2050, behavior: 'smooth' })}} className="a flex items-center">
+                                <button onClick={() => {window.scrollTo({ top: 2225, behavior: 'smooth' })}} className="a flex items-center">
                                     My Projects
                                 </button>
                             </li>
@@ -147,17 +147,17 @@ const Navbar = () => {
                 <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/90 rounded-r-xl lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
                     <div className={"flex flex-col justify-center h-full w-full"}>
                         <ul className="flex flex-col pb-24 font-bold text-xl">
-                            <li onClick={() => {window.scrollTo({ top: 660, behavior: 'smooth' })}} className="block  pt-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 680, behavior: 'smooth' })}} className="block  pt-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     About Me
                                 </button>
                             </li>
-                            <li onClick={() => {window.scrollTo({ top: 1425, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 1350, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     What I Know
                                 </button>
                             </li>
-                            <li onClick={() => {window.scrollTo({ top: 2850, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 2680, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     My Projects
                                 </button>

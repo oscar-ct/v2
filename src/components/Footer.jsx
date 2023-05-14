@@ -6,8 +6,8 @@ import {ReactComponent as Gmail} from "../icons/gmail.svg";
 
 const Footer = () => {
     return (
-        <div id={"wallpaper"}>
-            <div className={"pt-16 pb-20 lg:pb-16 flex flex-col items-center justify-center"}>
+        <div id={"footer-bg"}>
+            <div className={"mt-3 pt-16 pb-20 lg:pb-16 flex flex-col items-center justify-center"}>
                 <p className={"text-white md:text-black font-footer text-xl"}>
                     Designed & Built By Oscar Castro
                 </p>

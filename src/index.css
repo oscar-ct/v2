@@ -23,13 +23,24 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+#footer-bg {
+    background-image: url("https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 768px) {
     body {
         background-image: none;
         background-color: #0d131f;
     }
     #wallpaper {
+        display: none;
+    }
+    #footer-bg {
         background-image: none;
+        background-color: rgb(44, 44, 44);
     }
 }
 .font-footer {
