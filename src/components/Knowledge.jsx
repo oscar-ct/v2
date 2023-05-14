@@ -23,7 +23,7 @@ const Knowledge = () => {
             <div className={"bg-break-point h-24"}/>
             <div id={"skills"} className={"h-9"}/>
             <div className="opacity-100 inset-0 z-0 flex flex-col items-center justify-between w-100">
-                <div className={"mt-1 w-full p-6 lg:px-[5rem] lg:pb-[5rem]"}>
+                <div className={"mt-1 w-full px-6 pt-6 lg:px-[5rem] lg:pb-[4rem]"}>
                     <div className={"flex flex-col items-end"}>
                         <div className={"text-4xl pb-[2rem] font-bold text-purple-500"}>
                             What I Know
@@ -35,10 +35,10 @@ const Knowledge = () => {
                                 </div>
                                 <div className={"lg:p-3"}>
                                     <p className={"font-light"}>
-                                        Using <span className={"font-bold text-purple-400"}>JavaScript</span> libraries such as <span className={"font-bold text-purple-400"}>React</span> and <span className={"font-bold text-purple-400"}>jQuery</span> has made a frontend development a breeze.  jQuery's DOM traversing/manipulating is unmatched and React's vast hook library is extremely useful and powerful, paired with <span className={"font-bold text-purple-400"}>Redux</span> Toolkit for state handling allows me to provide users with fast and seamless experiences.
+                                        Using <span className={"font-bold text-purple-400"}>JavaScript</span> libraries such as <span className={"font-bold text-purple-400"}>React</span> and <span className={"font-bold text-purple-400"}>jQuery</span> has made frontend development extremely versatile.  jQuery's DOM traversing/manipulating is unmatched and React's vast hook library is extremely useful and powerful, paired with <span className={"font-bold text-purple-400"}>Redux</span> Toolkit for state handling allows me to provide users with fast and seamless experiences.
                                     </p>
                                     <p className={"font-light"}>
-                                        <span className={"font-bold text-purple-400"}>TailwindCSS</span> and <span className={"font-bold text-purple-400"}>Bootstrap</span> are more tools that I have taken full advantage of when developing an application.  Learning both is tricky but the speed, simplicity, and customization is unparalleled.
+                                        <span className={"font-bold text-purple-400"}>TailwindCSS</span> and <span className={"font-bold text-purple-400"}>Bootstrap</span> are more tools that I have taken full advantage of when designing an app.  Learning both is tricky but the speed, simplicity, and customization is unparalleled.
                                     </p>
                                 </div>
                                 <div className={"flex flex-wrap px-3 py-8 lg:p-3"}>
@@ -71,7 +71,7 @@ const Knowledge = () => {
                                         <span className={"font-bold text-purple-400"}>Firebase</span> is another great tool under my belt. Everything from storage to user authentication, Google's Firebase brings it all together without any of the extra legwork.
                                     </p>
                                 </div>
-                                <div className={"flex flex-wrap px-3 py-8 lg:p-3"}>
+                                <div className={"flex flex-wrap px-3 pt-8 lg:p-3"}>
                                     <Java fill={"white"} className={"w-12 m-2"}/>
                                     <Spring fill={"white"} className={"w-12 m-2"}/>
                                     <Thymeleaf fill={"white"} className={"w-12 m-2"}/>
