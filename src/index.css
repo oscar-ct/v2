@@ -16,14 +16,14 @@ body {
     background-color: rgba(26, 26, 26, 0.93);
 }
 
-#wallpaper {
+.bg-break-point {
     background-image: url("https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#footer-bg {
+#contact {
     background-image: url("https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
     background-position: center;
     background-attachment: fixed;
@@ -35,17 +35,16 @@ body {
         background-image: none;
         background-color: #0d131f;
     }
-    #wallpaper {
+    .bg-break-point {
         display: none;
     }
-    #footer-bg {
+    #contact {
         background-image: none;
         background-color: rgb(44, 44, 44);
     }
 }
 .font-footer {
     font-family: 'Damion', cursive;
-    font-size: 30px;
 }
 a {
     position: relative;

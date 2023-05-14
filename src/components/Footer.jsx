@@ -6,9 +6,9 @@ import {ReactComponent as Gmail} from "../icons/gmail.svg";
 
 const Footer = () => {
     return (
-        <div id={"footer-bg"}>
+        <div id={"contact"}>
             <div className={"mt-3 pt-16 pb-20 lg:pb-16 flex flex-col items-center justify-center"}>
-                <p className={"text-white md:text-black font-footer text-xl"}>
+                <p className={"text-purple-500 md:text-black font-footer text-2xl lg:text-4xl"}>
                     Designed & Built By Oscar Castro
                 </p>
                 <div className={"md:hidden flex pt-12"}>
@@ -18,7 +18,7 @@ const Footer = () => {
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 1.0 }}
                             tabIndex={0}>
-                            <Gmail className={"mx-6 w-10"} fill={"white"}/>
+                            <Gmail className={"mx-6 w-9"} fill={"white"}/>
                         </motion.div>
                         <ul tabIndex={0} className="mt-2 dropdown-content menu p-2 shadow bg-transparent antialiased rounded-lg">
                             <li className={"text-white"}>oscar.a.castro818@gmail.com</li>
@@ -27,11 +27,11 @@ const Footer = () => {
                     <motion.a
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.0 }}
-                        href={"https://github.com/oscar-ct"}><Github className={"mx-6 w-10"} fill={"white"}/></motion.a>
+                        href={"https://github.com/oscar-ct"}><Github className={"mx-6 w-9"} fill={"white"}/></motion.a>
                     <motion.a
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.0 }}
-                        href={"https://www.linkedin.com/in/oscar-ct/"}><LinkedIn className={"mx-6 w-10"} fill={"white"}/></motion.a>
+                        href={"https://www.linkedin.com/in/oscar-ct/"}><LinkedIn className={"mx-6 w-9"} fill={"white"}/></motion.a>
                 </div>
             </div>
         </div>

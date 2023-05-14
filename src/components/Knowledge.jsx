@@ -20,12 +20,12 @@ import {ReactComponent as Thymeleaf} from "../icons/thymeleaf.svg";
 const Knowledge = () => {
     return (
         <>
-        <div id={"wallpaper"} className={"h-24 static"}>
-        </div>
+            <div className={"bg-break-point h-24"}/>
+            <div id={"skills"} className={"h-9"}/>
             <div className="opacity-100 inset-0 z-0 flex flex-col items-center justify-between w-100">
-                <div className={"w-full p-6 lg:p-[5rem]"}>
+                <div className={"mt-1 w-full p-6 lg:px-[5rem] lg:pb-[5rem]"}>
                     <div className={"flex flex-col items-end"}>
-                        <div className={"text-4xl pb-[3rem] font-bold text-purple-500"}>
+                        <div className={"text-4xl pb-[2rem] font-bold text-purple-500"}>
                             What I Know
                         </div>
                         <div className={"flex lg:px-3 flex-col lg:flex-row text-white"}>

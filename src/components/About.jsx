@@ -24,7 +24,7 @@ const About = () => {
                 variants={variants}
                 className={"backdrop-blur-sm"}
             >
-                    <div className={"py-6 px-5 flex flex-col lg:flex-row w-full"}>
+                    <div className={"pt-6 px-5 flex flex-col lg:flex-row w-full"}>
                         <div className={"lg:w-6/12 lg:pl-[4rem] 2xl:pl-[10rem] flex flex-col justify-center text-white antialiased mb-5"}>
                             <div className={"pb-3"}>Hello, my name is</div>
                             <div className={"text-7xl font-bold pb-5"}><span className={"font-black text-purple-600"}>Oscar</span> Castro.</div>
@@ -38,7 +38,8 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"p-6 mb-8 lg:mb-0 lg:p-[5rem] flex flex-col text-white"}>
+                    <div id={"about"} className={"h-9"}/>
+                    <div className={"p-6 lg:mb-0 lg:p-[5rem] flex flex-col text-white"}>
                         <div className={"text-4xl pb-6 font-bold text-purple-500"}>
                             About Me
                         </div>

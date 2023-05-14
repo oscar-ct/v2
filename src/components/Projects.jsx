@@ -26,14 +26,15 @@ const Projects = () => {
 
     return (
         <>
-            <div id={"wallpaper"} className={"h-24"}/>
+            <div className={"bg-break-point h-24"}/>
+            <div id={"projects"} className={"h-9"}/>
             <div className="opacity-100 inset-0 z-0 flex flex-col items-center justify-between w-100">
-                <div className={"w-full p-6 lg:pt-[5rem] lg:pb-[3rem] lg:px-[5rem]"}>
+                <div className={"w-full p-6 lg:pt-7 lg:pb-[3rem] lg:px-[5rem]"}>
                     <div className={"flex flex-col lg:items-start lg:flex-row items-start"}>
-                        <div className={"lg:w-5/12 pt-2 lg:pt-0 text-4xl font-bold text-purple-500"}>
+                        <div className={"lg:w-5/12 lg:pt-0 text-4xl font-bold text-purple-500"}>
                             Some Of My Work
                         </div>
-                        <div className={"lg:w-7/12 p-1 mt-12 lg:mt-0 lg:m-0 rounded-lg backdrop-blur-xl"}>
+                        <div className={"lg:w-7/12 mb-2 p-1 mt-8 lg:mt-0 lg:m-0 rounded-lg backdrop-blur-xl"}>
                             <p className={"text-white text-lg antialiased"}>
                                 These are some of my most notable projects, I am always coding so be sure to stop by and check out all my repositories <span><a href={"https://github.com/oscar-ct?tab=repositories"} className={"font-bold text-purple-400"}>here</a></span>.
                             </p>
