@@ -146,31 +146,32 @@ const Navbar = () => {
 
                 <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/80 rounded-r-xl lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
                     <div className={"flex flex-col justify-center h-full w-full"}>
-                        <ul className="flex flex-col gap-4 pb-12 font-bold text-2xl">
-                            <li onClick={() => {window.scrollTo({ top: 660, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                        <ul className="flex flex-col pb-12 font-bold text-xl">
+                            <li onClick={() => {window.scrollTo({ top: 660, behavior: 'smooth' })}} className="block  pt-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     About Me
                                 </button>
                             </li>
-                            <li onClick={() => {window.scrollTo({ top: 1425, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 1425, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     What I Know
                                 </button>
                             </li>
-                            <li onClick={() => {window.scrollTo({ top: 2850, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 2850, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     My Projects
                                 </button>
                             </li>
-                            <li onClick={() => {window.scrollTo({ top: 9999, behavior: 'smooth' })}} className="block py-4 font-normal antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
+                            <li onClick={() => {window.scrollTo({ top: 9999, behavior: 'smooth' })}} className="block font-normal pt-4 antialiased hover:subpixel-antialiased  hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     Contact
                                 </button>
                             </li>
-                            <div className={"px-8 pt-5 flex justify-center"}>
+                            <div className={"px-8 pt-4 flex justify-start"}>
                                 <label
+                                    style={{cursor: "pointer"}}
                                     htmlFor="modal-message"
-                                    className="antialiased text-center hover:subpixel-antialiased text-xl mb-2 block w-60 md:w-72 rounded-lg bg-gradient-to-tr from-purple-600 to-purple-400 py-2 px-4 font-bold uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                    className="antialiased text-center hover:subpixel-antialiased text-lg mb-2 block rounded-lg bg-gradient-to-tr from-purple-600 to-purple-400 py-2 px-4 font-bold uppercase text-white shadow-md shadow-purple-500/20 transition-all hover:shadow-lg hover:shadow-purple-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                 >
                                     <span>MESSAGE ME</span>
                                 </label>

@@ -1,12 +1,13 @@
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import {useEffect} from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import {useEffect} from "react";
 
 
 
 function App() {
+
     useEffect(() => {
         window.history.scrollRestoration = 'manual'
     }, []);

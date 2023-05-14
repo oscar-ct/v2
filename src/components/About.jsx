@@ -5,22 +5,21 @@ const About = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     const variants = {
-        open: { opacity: 1, y: 0 },
-        closed: { opacity: 0, y: "-50%" },
+        open: { opacity: 1, x: 0 },
+        closed: { opacity: 0, x: "-100%" },
     }
-
 
     useEffect(function () {
         setTimeout(function () {
             setIsOpen(true)
-        }, 400)
+        }, 500)
     }, []);
+
+
     return (
         <>
         <AnimatePresence>
             <motion.div
-                initial={{opacity: 0}} exit={{opacity: 0}}
-                transition={{ duration: 1.0 }}
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
                 className={"backdrop-blur-sm"}
