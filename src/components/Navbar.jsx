@@ -48,8 +48,8 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`sticky inset-0 z-10 block h-max w-full max-w-full rounded-none  lg:bg-transparent py-5 text-white shadow-md backdrop-blur-sm  lg:py-4 lg:mb-8`}
-                 style={scrollY === 0 || scrollDirection === "up" || (scrollDirection === "down" && scrollY < 25) ? styles.active: styles.hidden}
+            <nav className={`sticky inset-0 z-10 block h-max w-full max-w-full rounded-none py-5 text-white shadow-md backdrop-blur-sm  lg:py-4 lg:mb-8`}
+                 style={scrollY < 25 || scrollDirection === "up" || (scrollDirection === "down" && scrollY < 25) ? styles.active: styles.hidden}
             >
                 <div className="px-5 flex justify-between items-center text-white">
                     <div className={"hidden lg:flex lg:items-center"}>
