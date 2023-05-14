@@ -144,9 +144,9 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/80 rounded-r-xl lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
+                <div className={`fixed top-[4rem] left-0 w-9/12 md:w-6/12 h-screen bg-black/90 rounded-r-xl lg:hidden`} style={openNav ? styles.active : styles.hidden2}>
                     <div className={"flex flex-col justify-center h-full w-full"}>
-                        <ul className="flex flex-col pb-12 font-bold text-xl">
+                        <ul className="flex flex-col pb-24 font-bold text-xl">
                             <li onClick={() => {window.scrollTo({ top: 660, behavior: 'smooth' })}} className="block  pt-4 font-normal antialiased hover:subpixel-antialiased hover:bg-purple-500/40">
                                 <button className="a flex justify-start px-8">
                                     About Me
