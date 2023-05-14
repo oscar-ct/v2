@@ -23,13 +23,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
     body {
         background-image: none;
         background-color: #0d131f;
     }
     #wallpaper {
-        display: none;
+        background-image: none;
     }
 }
 .font-footer {

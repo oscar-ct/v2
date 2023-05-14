@@ -33,7 +33,7 @@ const Projects = () => {
                         <div className={"lg:w-5/12 pt-2 lg:pt-0 text-4xl font-bold text-purple-500"}>
                             Some Of My Work
                         </div>
-                        <div className={"lg:w-7/12 p-1 my-12 lg:my-0 lg:m-0 rounded-lg backdrop-blur-xl"}>
+                        <div className={"lg:w-7/12 p-1 mt-12 lg:mt-0 lg:m-0 rounded-lg backdrop-blur-xl"}>
                             <p className={"text-white text-lg antialiased"}>
                                 These are some of my most notable projects, I am always coding so be sure to stop by and check out all my repositories <span><a href={"https://github.com/oscar-ct?tab=repositories"} className={"font-bold text-purple-400"}>here</a></span>.
                             </p>

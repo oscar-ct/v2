@@ -8,17 +8,17 @@ const Footer = () => {
     return (
         <div id={"wallpaper"}>
             <div className={"pt-16 pb-20 lg:pb-16 flex flex-col items-center justify-center"}>
-                <p className={"text-black font-footer text-xl"}>
+                <p className={"text-white md:text-black font-footer text-xl"}>
                     Designed & Built By Oscar Castro
                 </p>
-                <div className={"lg:hidden flex pt-12"}>
+                <div className={"md:hidden flex pt-12"}>
                     <div className="dropdown dropdown-bottom">
                         <motion.div
                             style={{cursor: "pointer"}}
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 1.0 }}
                             tabIndex={0}>
-                            <Gmail className={"mx-6 w-10"} fill={"black"}/>
+                            <Gmail className={"mx-6 w-10"} fill={"white"}/>
                         </motion.div>
                         <ul tabIndex={0} className="mt-2 dropdown-content menu p-2 shadow bg-transparent antialiased rounded-lg">
                             <li className={"text-white"}>oscar.a.castro818@gmail.com</li>
@@ -27,11 +27,11 @@ const Footer = () => {
                     <motion.a
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.0 }}
-                        href={"https://github.com/oscar-ct"}><Github className={"mx-6 w-10"} fill={"black"}/></motion.a>
+                        href={"https://github.com/oscar-ct"}><Github className={"mx-6 w-10"} fill={"white"}/></motion.a>
                     <motion.a
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.0 }}
-                        href={"https://www.linkedin.com/in/oscar-ct/"}><LinkedIn className={"mx-6 w-10"} fill={"black"}/></motion.a>
+                        href={"https://www.linkedin.com/in/oscar-ct/"}><LinkedIn className={"mx-6 w-10"} fill={"white"}/></motion.a>
                 </div>
             </div>
         </div>
