@@ -84,7 +84,7 @@ export const projects = [
 
     },
     {   id: 3,
-        name: 'React-Films',
+        name: 'React Films',
         github_link: "https://github.com/oscar-ct/react-films",
         demo_link: "https://react-films-ten.vercel.app/",
         images: [films1, films2, films3, films4, films5, films6],
@@ -93,12 +93,12 @@ export const projects = [
 
     },
     {   id: 4,
-        name: 'Pokémon-J',
+        name: 'Pokémon-j',
         github_link: "https://github.com/oscar-ct/pok-mon",
         demo_link: "https://oscar-ct.github.io/pok-mon/",
         images: [poke1, poke2, poke3, poke4, poke5, poke6],
         development: ["jQuery", "HTML", "JavaScript", "CSS"],
-        description: 'Pokémon-J is a front-end web application, programmed using mostly jQuery. Utilizing AJAX and PokéAPI, users are met with a fun interactive interface providing lively pokémon sprites, along with pokémon stats.'
+        description: 'Love pokémon? Pokémon-j helps you learn more about pokémon. rom gen, weight, and height. programmed using mostly jQuery. Utilizing AJAX and PokéAPI, users are met with a fun interactive interface providing lively pokémon sprites, along with pokémon stats.'
 
     },
     // {
@@ -120,20 +120,20 @@ export const projects = [
     },
     {
         id: 6,
-        name: 'GamerHaven',
+        name: 'Gamer Haven',
         github_link: "https://github.com/Cappastone/KAPPA",
         demo_link: null,
         images: [haven1, haven2, haven3, haven4, haven5, haven6, haven7, haven8, haven9, haven10, haven11, haven12, haven13, haven14, haven15],
         development: ["Java", "Spring", "Thymeleaf", "MySQL", "HTML", "JavaScript", "CSS"],
-        description: 'GamerHaven is a full-stack social media app created for gamers across the world!  Built by a team of 5, users can search over 500,000 game titles, follow other users, create posts, leave comments, and much more.  GamerHaven is built on Spring, structured using MVC, programmed with Java and SQL, utilizes Spring JPA, and connected to MySQL.'
+        description: 'Gamer Haven is a social media app created for gamers. Built by a team of 5, implementing Agile and Scrum methods. Users can create accounts, personalize their profile, search games, favorite games, follow users, create posts, comment on posts, and more. Backend is built with Java Spring Boot and MySQL.  Frontend is built with Thymeleaf, jQuery, JavaScript. Styling is finished with Bootstrap 5.'
     },
     {
         id: 7,
-        name: 'GameLister',
+        name: 'Game Lister',
         github_link: "https://github.com/ChadListers/java-adlister/tree/main",
         demo_link: null,
         images: [lister1, lister2, lister3, lister4, lister5, lister6, lister7, lister8],
         development: ["Java", "MySQL", "HTML", "JavaScript", "CSS"],
-        description: 'GameLister is a Craigslist like full-stack web application where users can create accounts, search listings, and post ads with full CRUD functionality.  Built by a team of 3, GameLister is structured using MVC, programmed with Java and SQL, utilizes Java Servlets and JDBC API, and connected to MySQL. Database security is achieved by utilizing prepared statements.'
+        description: 'Game Lister is a Craigslist like web app where users can create accounts, search listings, and post ads with full CRUD functionality.  Built by a team of 3, GameLister is structured using MVC design, programmed with Java EE, utilizes Java Servlets w/ JDBC API, and connected to MySQL. Styling is finished with custom CSS.'
     }
 ]

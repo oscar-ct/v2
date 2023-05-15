@@ -23,7 +23,7 @@ const Knowledge = () => {
             <div className={"bg-break-point h-24"}/>
             <div id={"skills"} className={"h-9"}/>
             <div className="opacity-100 inset-0 z-0 flex flex-col items-center justify-between w-100">
-                <div className={"mt-1 w-full px-6 pt-6 lg:px-[5rem] lg:pb-[4rem]"}>
+                <div className={"mt-1 w-full p-6 lg:px-[5rem] lg:pb-[4rem]"}>
                     <div className={"flex flex-col items-end"}>
                         <div className={"text-4xl pb-[2rem] font-bold text-purple-500"}>
                             What I Know
