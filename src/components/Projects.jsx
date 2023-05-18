@@ -101,7 +101,7 @@ const Projects = () => {
 
                 <div className={"flex flex-col items-center justify-center"}>
                     <h1 className={"py-3 text-center text-2xl text-white"}>Technologies</h1>
-                    <Select styles={customStyles} className={"w-11/12 md:w-8/12 lg:w-6/12 text-start z-10 mb-12"} placeholder={"Select"} options={options} onChange={handleChange}/>
+                    <Select styles={customStyles} isSearchable={false} className={"w-11/12 md:w-8/12 lg:w-6/12 text-black z-10 mb-12"} placeholder={"Select"} options={options} onChange={handleChange}/>
                 </div>
 
                 <div className={"opacity-50 mb-8 border-b-2 border-white md:mx-8"}/>
