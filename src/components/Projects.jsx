@@ -42,7 +42,7 @@ const Projects = () => {
             ...base,
             cursor: "pointer"
         }),
-        option: (base, { data, isDisabled, isFocused, isSelected }) => {
+        option: (base, { data, isDisabled, isFocused, isSelected, isActive}) => {
             return {
                 ...base,
                 cursor: "pointer",
@@ -50,9 +50,16 @@ const Projects = () => {
                 backgroundColor: isFocused
                     ? "rgba(192,132,252,0.3)"
                     : isSelected
-                    ? "rgb(192 132 252)"
-                    : "rgb(245,245,245)"
-            }
+                        ? "rgb(192 132 252)"
+                        : "rgb(245,245,245)",
+                ':active': {
+                    ...base[':active'],
+                    backgroundColor: !isDisabled
+                        && isSelected
+                        && "rgb(245,245,245)",
+
+                },
+            };
         },
         menu: base => ({
             ...base,
@@ -78,7 +85,7 @@ const Projects = () => {
                 <div className={"bg-break-point h-24"}/>
                 <div id={"projects"} className={"h-9"}/>
                 <div className="opacity-100 inset-0 z-0 flex flex-col items-center justify-between w-100">
-                    <div className={"w-full p-6 lg:pt-7 lg:pb-[3rem] lg:px-[5rem]"}>
+                    <div className={"w-full p-6 lg:pt-7 lg:pb-[2rem] lg:px-[5rem]"}>
                         <div className={"flex flex-col lg:items-start lg:flex-row items-start"}>
                             <div className={"lg:w-5/12 lg:pt-0 text-4xl font-bold text-purple-500"}>
                                 Some Of My Work
@@ -91,12 +98,13 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"opacity-50 mb-8 border-b-2 border-white md:mx-8"}/>
 
                 <div className={"flex flex-col items-center justify-center"}>
                     <h1 className={"py-3 text-center text-2xl text-white"}>Technologies</h1>
                     <Select styles={customStyles} className={"w-11/12 md:w-8/12 lg:w-6/12 text-start z-10 mb-12"} placeholder={"Select"} options={options} onChange={handleChange}/>
                 </div>
+
+                <div className={"opacity-50 mb-8 border-b-2 border-white md:mx-8"}/>
 
                 {
                     localProjects.map(function (project, index) {
