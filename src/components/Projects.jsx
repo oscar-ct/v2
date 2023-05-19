@@ -4,7 +4,7 @@ import {projects} from "../data/projects";
 import Icon from "./Icon";
 import {ReactComponent as Github} from "../icons/github.svg";
 import {ReactComponent as Link} from "../icons/external.svg";
-import {motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import Select from "react-select";
 
 
@@ -101,15 +101,23 @@ const Projects = () => {
 
                 <div className={"flex flex-col items-center justify-center"}>
                     <h1 className={"py-3 text-center text-2xl text-white"}>Technologies</h1>
-                    <Select styles={customStyles} isSearchable={false} className={"w-11/12 md:w-8/12 lg:w-6/12 text-black z-10 mb-12"} placeholder={"Select"} options={options} onChange={handleChange}/>
+                    <Select
+                        styles={customStyles}
+                        isSearchable={false}
+                        className={"w-11/12 md:w-8/12 lg:w-6/12 text-black z-10 mb-12"}
+                        defaultValue={{ label: `View All (${projects.length})`, value: "HTML" }}
+                        // placeholder={`View All (${projects.length})`}
+                        options={options}
+                        onChange={handleChange}/>
                 </div>
 
                 <div className={"opacity-50 mb-8 border-b-2 border-white md:mx-8"}/>
-
+                <AnimatePresence>
                 {
                     localProjects.map(function (project, index) {
                         return (
-                            <div key={index} className={"flex flex-col"}>
+
+                            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} key={index} className={"flex flex-col"}>
                                 {
                                     project.images !== null &&
                                     <>
@@ -164,11 +172,12 @@ const Projects = () => {
                                 </div>
 
                                 <div className={"pt-6 opacity-50 mb-8 border-b-2 border-white md:mx-8"}/>
-                            </div>
+                            </motion.div>
+
                         )
                     })
                 }
-
+                </AnimatePresence>
 
             </>
     );

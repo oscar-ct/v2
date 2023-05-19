@@ -69,9 +69,9 @@ export const projects = [
         name: "Support Desk",
         github_link: "https://github.com/oscar-ct/support-desk",
         demo_link: null,
-        development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS"],
+        development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS", "Bootstrap"],
         images: [support1, support2, support3, support4, support5, support6],
-        description: "Need IT support for your favorite electronics? Support desk is here to help. Built on the MERN stack (MongoDB, Express, React, NodeJS), users can login/signup, submit support tickets with full CRUD functionality, and view ticket notes made by the user and Support Specialist. Supported by Redux Toolkit for state handling and Mongoose for object modeling. Styling is finished with Bootstrap 5."
+        description: "Need IT support for your favorite electronics? Support desk is here to help. Built on the MERN stack (MongoDB, Express, React, NodeJS), users can login/signup, submit support tickets with full CRUD functionality, and view ticket notes made by the user and Support Specialist. Utilizing Redux Toolkit for state handling and Mongoose for object modeling. Styling is finished with Bootstrap 5."
 
     },
     {   id: 2,
