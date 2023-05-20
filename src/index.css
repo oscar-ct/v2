@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 body {
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     /*background-image: url("https://wallpapercrafter.com/desktop/13142-hill-night-horizon-dark-minimalism-4k.jpg");*/
     background-image: url("https://images.unsplash.com/photo-1596750462153-5b6217be4bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1284&q=80");
