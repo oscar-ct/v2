@@ -70,8 +70,8 @@ const Navbar = () => {
                                 tabIndex={0}>
                                     <Gmail className={"ml-4 w-6"} fill={"white"}/>
                             </motion.div>
-                            <ul tabIndex={0} className="mt-1 dropdown-content menu p-2 shadow bg-transparent antialiased rounded-lg">
-                                <li className={"text-white"}>oscar.a.castro818@gmail.com</li>
+                            <ul tabIndex={0} className="mt-1 dropdown-content p-2 shadow bg-transparent rounded-lg">
+                                <li><a href={"mailto:oscar.a.castro818@gmail.com"} className="a">oscar.a.castro818@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
