@@ -35,10 +35,10 @@ const Knowledge = () => {
                                 </div>
                                 <div className={"lg:p-3"}>
                                     <p className={"font-light"}>
-                                        Using <span className={"font-bold text-purple-400"}>JavaScript</span> libraries such as <span className={"font-bold text-purple-400"}>React</span> and <span className={"font-bold text-purple-400"}>jQuery</span> has made frontend development extremely versatile.  jQuery's DOM traversing/manipulating is unmatched and React's vast hook library is extremely useful and powerful, paired with <span className={"font-bold text-purple-400"}>Redux</span> Toolkit for state handling allows me to provide users with fast and seamless experiences.
+                                        Using <span className={"font-bold text-purple-400"}>JavaScript</span> libraries such as <span className={"font-bold text-purple-400"}>React</span> and <span className={"font-bold text-purple-400"}>jQuery</span> has made frontend development extremely versatile.  jQuery's DOM traversing/manipulating is fast, efficient, yet simple and React's vast hook library/support is extremely useful and powerful, paired with <span className={"font-bold text-purple-400"}>Redux</span> Toolkit for state handling allows me to provide users with fast and seamless experiences.
                                     </p>
                                     <p className={"font-light"}>
-                                        <span className={"font-bold text-purple-400"}>TailwindCSS</span> and <span className={"font-bold text-purple-400"}>Bootstrap</span> are more tools that I have taken full advantage of when designing an app.  Learning both is tricky but the speed, simplicity, and customization is unparalleled.
+                                        <span className={"font-bold text-purple-400"}>TailwindCSS</span> and <span className={"font-bold text-purple-400"}>Bootstrap</span> are more tools that I have taken full advantage of when designing an app.  Learning both is tricky but the efficiency, simplicity, and customization are second to none.
                                     </p>
                                 </div>
                                 <div className={"flex flex-wrap px-3 py-8 lg:p-3"}>
@@ -59,7 +59,7 @@ const Knowledge = () => {
                                 </div>
                                 <div className={"lg:p-3"}>
                                     <p className={"font-light pb-2 border-b-2 border-solid"}>
-                                        Programming applications in <span className={"font-bold text-purple-400"}>Java EE</span>, with Servlets and JavaServer Pages, as well as utilizing Prepared Statements to prevent SQL Injection has provided me a wide-ranging experience with legacy programming.
+                                        Programming applications in <span className={"font-bold text-purple-400"}>Java EE</span>, with Servlets and Java Server Pages, as well as utilizing Prepared Statements to prevent SQL Injection has provided me a wide-ranging experience with legacy programming.
                                     </p>
                                     <p className={"pt-2 font-light pb-2 border-b-2 border-solid"}>
                                         Setting up a full-stack application using <span className={"font-bold text-purple-400"}>Spring Boot</span> is amazingly simple. Creating a <span className={"font-bold text-purple-400"}>MySQL</span> database with Java Beans takes the complicated schema business out of the picture. Defining controllers with Spring couldn't be any easier and by utilizing <span className={"font-bold text-purple-400"}>Thymeleaf</span>, serving the frontend is effortless.
