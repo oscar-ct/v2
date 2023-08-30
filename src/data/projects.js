@@ -6,12 +6,7 @@ const dream5 = require('../images/dream-cars/dream_5.jpg');
 const dream6 = require('../images/dream-cars/dream_6.jpg');
 
 
-const support1 = require('../images/support-desk/support_1.jpg');
-const support2 = require('../images/support-desk/support_2.jpg');
-const support3 = require('../images/support-desk/support_3.jpg');
-const support4 = require('../images/support-desk/support_4.jpg');
-const support5 = require('../images/support-desk/support_5.jpg');
-const support6 = require('../images/support-desk/support_6.jpg');
+
 
 
 const films1 = require('../images/react-films/films_1.jpg');
@@ -63,15 +58,43 @@ const lister6 = require('../images/game-lister/lister_6.jpg');
 const lister7 = require('../images/game-lister/lister_7.jpg');
 const lister8 = require('../images/game-lister/lister_8.jpg');
 
+const eshop1 = require('../images/e-shop/e-shop-1.jpg');
+const eshop2 = require('../images/e-shop/e-shop-2.jpg');
+const eshop3 = require('../images/e-shop/e-shop-3.jpg');
+const eshop4 = require('../images/e-shop/e-shop-4.jpg');
+const eshop5 = require('../images/e-shop/e-shop-5.jpg');
+const eshop6 = require('../images/e-shop/e-shop-6.jpg');
+const eshop7 = require('../images/e-shop/e-shop-7.jpg');
+const eshop8 = require('../images/e-shop/e-shop-8.jpg');
+const eshop9 = require('../images/e-shop/e-shop-9.jpg');
+const eshop10 = require('../images/e-shop/e-shop-10.jpg');
+const eshop11 = require('../images/e-shop/e-shop-11.jpg');
+const eshop12 = require('../images/e-shop/e-shop-12.jpg');
+const eshop13 = require('../images/e-shop/e-shop-13.jpg');
+const eshop14 = require('../images/e-shop/e-shop-14.jpg');
+const eshop15 = require('../images/e-shop/e-shop-15.jpg');
+const eshop16 = require('../images/e-shop/e-shop-16.jpg');
+const eshop17 = require('../images/e-shop/e-shop-17.jpg');
+const eshop18 = require('../images/e-shop/e-shop-18.jpg');
+const eshop19 = require('../images/e-shop/e-shop-19.jpg');
+const eshop20 = require('../images/e-shop/e-shop-20.jpg');
+const eshop21 = require('../images/e-shop/e-shop-21.jpg');
+const eshop22 = require('../images/e-shop/e-shop-22.jpg');
+const eshop23 = require('../images/e-shop/e-shop-23.jpg');
+const eshop24 = require('../images/e-shop/e-shop-24.jpg');
+const eshop25 = require('../images/e-shop/e-shop-25.jpg');
+const eshop26 = require('../images/e-shop/e-shop-26.jpg');
+
+
 
 export const projects = [
     {   id: 1,
-        name: "Support Desk",
-        github_link: "https://github.com/oscar-ct/support-desk",
-        demo_link: null,
-        development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS", "Bootstrap"],
-        images: [support1, support2, support3, support4, support5, support6],
-        description: "Need IT support for your favorite electronics? Support desk is here to help. Built on the MERN stack (MongoDB, Express, React, NodeJS), users can login/signup, submit support tickets with full CRUD functionality, and view ticket notes made by the user and Support Specialist. Utilizing Redux Toolkit for state handling and Mongoose for object modeling. Styling is finished with Bootstrap 5."
+        name: "e-shop",
+        github_link: "https://github.com/oscar-ct/e-shop",
+        demo_link: "https://e-shop-us.com",
+        development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS", "TailwindCSS"],
+        images: [eshop1, eshop2, eshop3, eshop4, eshop5, eshop6, eshop7, eshop8, eshop9, eshop10, eshop11, eshop12, eshop13, eshop14, eshop15, eshop16, eshop17, eshop18, eshop19, eshop20, eshop21, eshop22, eshop23, eshop24, eshop25, eshop26],
+        description: "Welcome to e-shop, an online e-commerce site, where purchases are made with securely with PayPal. e-shop is the one stop shop for customers to search products, add them to cart, use promo codes, view their orders, update account info, cancel orders, track orders, and more.  Admins have the ability to create/edit products, assign users admin privileges, update order status, and more. Authorization is protected using signed JWT http-only cookies.  Supported by Filestack for image uploads and PayPal for payment transactions.  Styling is finished with TailwindCSS/daisyui."
 
     },
     {   id: 2,
