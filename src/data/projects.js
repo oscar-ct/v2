@@ -84,7 +84,8 @@ const eshop23 = require('../images/e-shop/e-shop-23.jpg');
 const eshop24 = require('../images/e-shop/e-shop-24.jpg');
 const eshop25 = require('../images/e-shop/e-shop-25.jpg');
 const eshop26 = require('../images/e-shop/e-shop-26.jpg');
-
+const eshop27 = require('../images/e-shop/e-shop-27.jpg');
+const eshop28 = require('../images/e-shop/e-shop-28.jpg');
 
 
 export const projects = [
@@ -93,7 +94,7 @@ export const projects = [
         github_link: "https://github.com/oscar-ct/e-shop",
         demo_link: "https://e-shop-us.com",
         development: ["MongoDB", "Express", "React", "Redux", "Node.js", "HTML", "JavaScript", "CSS", "TailwindCSS"],
-        images: [eshop1, eshop2, eshop3, eshop4, eshop5, eshop6, eshop7, eshop8, eshop9, eshop10, eshop11, eshop12, eshop13, eshop14, eshop15, eshop16, eshop17, eshop18, eshop19, eshop20, eshop21, eshop22, eshop23, eshop24, eshop25, eshop26],
+        images: [eshop1, eshop2, eshop3, eshop4, eshop5, eshop6, eshop7, eshop8, eshop9, eshop10, eshop11, eshop12, eshop13, eshop14, eshop15, eshop16, eshop17, eshop18, eshop19, eshop20, eshop21, eshop22, eshop23, eshop24, eshop25, eshop26, eshop27, eshop28],
         description: "Welcome to e-shop, an online e-commerce site, where purchases are made with securely with PayPal. e-shop is the one stop shop for customers to search products, add them to cart, use promo codes, view their orders, update account info, cancel orders, track orders, and more.  Admins have the ability to create/edit products, assign users admin privileges, update order status, and more. Authorization is protected using signed JWT http-only cookies.  Supported by Filestack for image uploads and PayPal for payment transactions.  Styling is finished with TailwindCSS/daisyui."
 
     },
